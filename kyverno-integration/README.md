@@ -44,3 +44,17 @@ idpbuilder create --use-path-routing \
   -p https://github.com/cnoe-io/stacks//kyverno-integration/modules/enforce
 ```
 
+## Verification 
+Once you have verified that everything is running in ArgoCD; you can proceed by applying the sample cluster [policy](kyverno-policy.yaml)
+you can apply the policy with the command:
+`kubectl apply -f kyverno-policy.yaml`
+
+This sample policy does the following:
+  - The policy enforces the presence of 'app' label on pods. 
+  - The policy rule is named 'check-label-app'.
+  - The policy is on the whole cluster even in if created in the kyverno namespace
+  - The rule applies to resources of kind 'Pod'.
+  - The validation block defines the validation message and the pattern to match against.
+
+To verify that this policy is being enforced run the following command to create a Pod that *will not* have the 'app' label
+`kubectl run test-pod --image=nginx`
