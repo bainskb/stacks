@@ -17,7 +17,7 @@ desire a different configuration you can edit the following list in
 ```
 
 # Running
-
+To run the this stack you have to make sure to clone this repository. 
 ```bash
 # Create CNOE deployment with vcluster-multi-env stack
 idpbuilder create -p vcluster-multi-env
