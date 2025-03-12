@@ -14,4 +14,7 @@ As you see above, this add-on to `idpbuilder` has a dependency on the [reference
 1. Installs `localstack` helmchart as an `argo` application.
 2. Adds localstack crossplane ProviderConfig, targetting localstack
 
-Once the custom package is installed, localstack can be used from the backstage template `app-with-aws-resources`, by changing the `providerConfigName` during the bucket configuration page from `default` to `localstack`.
+Once the custom package is installed, localstack can be used from the backstage template `app-with-aws-resources`, by changing the `providerConfigName` during the bucket configuration page from `default` to `localstack` as shown below. 
+
+![backstageScreenshot.jpg](images/backstageScreenshot.jpg)
+![backstageCreation.jpg](images/backstageCreation.jpg)
