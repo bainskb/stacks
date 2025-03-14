@@ -44,3 +44,5 @@ idpbuilder create --use-path-routing \
   -p https://github.com/cnoe-io/stacks//kyverno-integration/modules/enforce
 ```
 
+Once installed you can apply policies to your cluster. For more information refer to the [Kyverno Documentation](https://kyverno.io/docs/)
+
